@@ -12,4 +12,3 @@
     Cheat delete fast enemies: press '4'
     Difficulty level: select difficulty level in the beginning og the game or during the game by pressing buttons on the
    window.
-5. All necessary information is mentioned above
