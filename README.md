@@ -1,14 +1,47 @@
-1. Code is run using gradle clean build run
-2. Implemented: Difficulty Level, Time and Score, and Undo and Cheat in the extension
-3. Design Patterns classes:
-    Singleton: DifficultyManager(Singleton), GameWindow(SingletonClient)
-    Observer: Observer(Observer), ScoreBoard(ConcreteObserver), Subject(Subject), GameEgine(ConcreteSubject)
-    Memento: Memento(Memento), Caretaker(Caretaker) , GameEngine(Originator)
-4. Instructions:
-    Undo: Game is saved when the player shoots, it can be undone by pressing key 'U'
-    Cheat delete slow projectiles: press key '1'
-    Cheat delete fast projectiles: press key '2'
-    Cheat delete slow enemies: press '3'
-    Cheat delete fast enemies: press '4'
-    Difficulty level: select difficulty level in the beginning og the game or during the game by pressing buttons on the
-   window.
+# Game Project README
+
+## How to Run the Game
+To build and run the game, use the following Gradle command:
+```sh
+gradle clean build run
+```
+
+## Implemented Features
+- **Difficulty Level Selection**
+- **Time and Score Tracking**
+- **Undo and Cheat Mechanisms**
+
+## Design Patterns Used
+### 1. Singleton Pattern
+- `DifficultyManager` (Singleton)
+- `GameWindow` (Singleton Client)
+
+### 2. Observer Pattern
+- `Observer` (Observer)
+- `ScoreBoard` (ConcreteObserver)
+- `Subject` (Subject)
+- `GameEngine` (ConcreteSubject)
+
+### 3. Memento Pattern
+- `Memento` (Memento)
+- `Caretaker` (Caretaker)
+- `GameEngine` (Originator)
+
+## Game Instructions
+### Undo Feature
+- The game state is saved every time the player shoots.
+- Press **'U'** to undo the last shot.
+
+### Cheat Codes
+- **Delete slow projectiles:** Press **'1'**
+- **Delete fast projectiles:** Press **'2'**
+- **Delete slow enemies:** Press **'3'**
+- **Delete fast enemies:** Press **'4'**
+
+### Difficulty Level Selection
+- Select the difficulty level at the beginning of the game.
+- You can also change the difficulty level during the game by pressing buttons on the game window.
+
+## Additional Notes
+- Ensure all dependencies are installed before running the game.
+- For troubleshooting, refer to the project documentation or logs.
